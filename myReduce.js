@@ -3,8 +3,10 @@
 
 function myReduce(arr, callback) {
 
-//  CODE INSIDE HERE   //
-
+	for (var i = 0; i < arr.length; i++) {
+		callback(arr[i], arr[1]);
+	}
+	return callback();
 }
 
 /*
